@@ -1,0 +1,35 @@
+@import './globals/layout';
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.piece-container {
+    padding: 0 $piece-padding;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.piece-feature {
+    padding: 0 5px 5px 0;
+}
+
+.feature-group {
+    width: $feature-table-min-width;
+    padding: 0 5px 0 0;
+
+    & > .piece-feature {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    .piece-feature {
+        padding-right: 0;
+    }
+}
